@@ -19,6 +19,11 @@ public class MainMenuScript : MonoBehaviour
         SceneManager.LoadScene("Settings Screen");
     }
 
+    public void TutorialLoader()
+    {
+        SceneManager.LoadScene("Tutorial Screen");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
