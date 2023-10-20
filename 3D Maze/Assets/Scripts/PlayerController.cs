@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    //Variables
     public float moveSpeed = 1.0f;
     public float walkSpeed = 0.1f;
     public float runSpeed = 0.2f;
