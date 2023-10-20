@@ -310,7 +310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486e9e3c37ef2cb428f451771e1165d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSensitivitySlider: {fileID: 0}
 --- !u!1 &362298017
 GameObject:
   m_ObjectHideFlags: 0

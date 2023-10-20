@@ -9,6 +9,7 @@ public class PlayerSFXManager : MonoBehaviour
     public AudioSource HandgunSFX;
     public AudioSource ARSFX;
     public AudioSource bulletExplosionSFX;
+    public AudioSource itemExplosionSFX;
 
 
     void Update()

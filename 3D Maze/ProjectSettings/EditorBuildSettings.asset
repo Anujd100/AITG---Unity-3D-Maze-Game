@@ -9,16 +9,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Screens/Start Screen/Start Screen.unity
     guid: af83e2a69139db64bae555c18c205654
   - enabled: 1
-    path: Assets/Scenes/Menu Screens/Start Screen/Settings Screen.unity
+    path: Assets/Scenes/Menu Screens/Tutorial Screen/Tutorial Screen.unity
+    guid: 477d47b6a235bde458bbc49c7c7c46d9
+  - enabled: 1
+    path: Assets/Scenes/Menu Screens/Settings Screen/Settings Screen.unity
     guid: 48d05f4baeec5e04cae46d37e3413b30
   - enabled: 1
-    path: Assets/Scenes/3D Maze Level/3D Maze Level 1.unity
+    path: Assets/Scenes/3D Maze Levels/3D Maze Level 1.unity
     guid: e874411ae14a3bb41877576b923af2e1
   - enabled: 1
-    path: Assets/Scenes/3D Maze Level/3D Maze Level 2.unity
+    path: Assets/Scenes/3D Maze Levels/3D Maze Level 2.unity
     guid: 5b37e002921873c428082449dcdcef95
   - enabled: 1
-    path: Assets/Scenes/3D Maze Level/3D Maze Level 3.unity
+    path: Assets/Scenes/3D Maze Levels/3D Maze Level 3.unity
     guid: 2fa7b1a7c50d81c44b84bc8a1afa09a3
   - enabled: 1
     path: Assets/Scenes/Menu Screens/Win Screen/Win Screen.unity

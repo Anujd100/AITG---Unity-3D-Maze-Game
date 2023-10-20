@@ -24,6 +24,9 @@ public class UIManager : MonoBehaviour
 
     public void EnableGameOverMenu()
     {
+        //Disable shooting
+        ProjectileGun.shootingEnabled = false;
+
         gameOverMenu.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -36,6 +39,9 @@ public class UIManager : MonoBehaviour
 
     public void EnableEndLevelMenu()
     {
+        //Disable shooting
+        ProjectileGun.shootingEnabled = false;
+
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("3D Maze Level 3")) return;
         endLevelMenu.SetActive(true);
         Cursor.visible = true;
@@ -44,6 +50,9 @@ public class UIManager : MonoBehaviour
 
     public void EnableEndGameMenu()
     {
+        //Disable shooting
+        ProjectileGun.shootingEnabled = false;
+
         SceneManager.LoadScene("Win Screen");
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -57,6 +66,7 @@ public class UIManager : MonoBehaviour
 
     public void MainMenuLoader()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Start Screen");
     }
 }
