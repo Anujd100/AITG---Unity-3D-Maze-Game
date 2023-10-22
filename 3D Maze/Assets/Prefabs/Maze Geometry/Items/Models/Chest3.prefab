@@ -108,8 +108,11 @@ GameObject:
   - component: {fileID: 7519443271673418621}
   - component: {fileID: 8057813912022336366}
   - component: {fileID: 4162240492836878525}
+<<<<<<< HEAD
   - component: {fileID: 7253327216921500850}
   - component: {fileID: 8959438278911215813}
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_Layer: 0
   m_Name: Chest3
   m_TagString: Untagged
@@ -162,7 +165,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7519443271666032825}
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.431929, y: 2.33546, z: 2.9789858}
@@ -183,6 +190,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD
 --- !u!114 &7253327216921500850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +307,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!1 &7519443271666032827
 GameObject:
   m_ObjectHideFlags: 0

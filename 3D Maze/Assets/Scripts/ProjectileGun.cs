@@ -23,9 +23,6 @@ public class ProjectileGun : MonoBehaviour
     //bools
     bool shooting, readyToShoot, reloading;
 
-    //Static bool
-    public static bool shootingEnabled = true;
-
     //reference
     public Camera fpsCam;
     public Transform attackPoint;
@@ -50,24 +47,11 @@ public class ProjectileGun : MonoBehaviour
 
         //set ammo display, if it exists
         if (ammunitionDisplay != null)
-        {
-            if(!reloading)
-            {
-                ammunitionDisplay.SetText("AMMO: " + bulletsLeft / bulletsPerTap + " / " + magazineSize / bulletsPerTap);
-            }
-            else
-            {
-                ammunitionDisplay.SetText("AMMO: RELOADING...");
-            }
-        }
-
+            ammunitionDisplay.SetText("Ammo: " + bulletsLeft / bulletsPerTap + " / " + magazineSize / bulletsPerTap);
     }
 
     private void MyInput()
     {
-        //Check if shooting is enabled
-        if (!shootingEnabled) return;
-
         //Check if allowed to hold down button and take corresponding input
         if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse0);
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);

@@ -11,8 +11,13 @@ GameObject:
   - component: {fileID: 4461822144475732336}
   - component: {fileID: 9201295929198142580}
   - component: {fileID: 4903395342061790461}
+<<<<<<< HEAD
+  - component: {fileID: 1404756400106832965}
+  - component: {fileID: 7469344491248783480}
+=======
   - component: {fileID: 7469344491248783480}
   - component: {fileID: 4012032878879986337}
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   - component: {fileID: 2905379897190435517}
   - component: {fileID: 6826067363810775093}
   m_Layer: 9
@@ -87,6 +92,9 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
+--- !u!54 &1404756400106832965
+=======
 --- !u!135 &7469344491248783480
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -101,6 +109,7 @@ SphereCollider:
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4012032878879986337
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,6 +125,22 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+<<<<<<< HEAD
+--- !u!135 &7469344491248783480
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4647557529669925756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!114 &2905379897190435517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,8 +153,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28e3604118866b469fb998a665039d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  rb: {fileID: 1404756400106832965}
+  explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
+=======
   rb: {fileID: 4012032878879986337}
   explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
+  bullet: {fileID: 4647557529669925756}
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256

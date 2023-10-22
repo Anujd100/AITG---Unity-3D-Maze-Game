@@ -205,7 +205,10 @@ GameObject:
   - component: {fileID: 4830339491060470229}
   - component: {fileID: -8707033314158024595}
   - component: {fileID: 486844518586009221}
+<<<<<<< HEAD
   - component: {fileID: -4087904537071120132}
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_Layer: 0
   m_Name: Chest2
   m_TagString: Untagged
@@ -281,11 +284,18 @@ MonoBehaviour:
   rewardAmount: 100
   animDuration: 4
   explosionDuration: 1
+<<<<<<< HEAD
   collectedItem: 0
   ChestAnimator: {fileID: 4155180149396873097}
   animName: Pixel_box_02_Armature
   chestExplosionEffect: {fileID: 171756528292319034, guid: 3ae924979e46a9142a2d30027547df0b, type: 3}
   itemFXHolder: {fileID: -4087904537071120132}
+=======
+  openedChest: 0
+  ChestAnimator: {fileID: 4155180149396873097}
+  animName: Pixel_box_02_Armature
+  chestExplosionEffect: {fileID: 171756528292319034, guid: 3ae924979e46a9142a2d30027547df0b, type: 3}
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!65 &486844518586009221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,6 +309,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5095127, y: 1, z: 4.3505607}
   m_Center: {x: -0.0011224747, y: 0, z: 1.1458035}
+<<<<<<< HEAD
 --- !u!82 &-4087904537071120132
 AudioSource:
   m_ObjectHideFlags: 0
@@ -395,6 +406,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!1 &4155180149389618255
 GameObject:
   m_ObjectHideFlags: 0

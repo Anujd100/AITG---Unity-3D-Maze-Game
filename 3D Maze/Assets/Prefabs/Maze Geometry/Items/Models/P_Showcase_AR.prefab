@@ -457,7 +457,10 @@ GameObject:
   - component: {fileID: 8268567337513277503}
   - component: {fileID: 1327350959558496374}
   - component: {fileID: 7355616929519170027}
+<<<<<<< HEAD
   - component: {fileID: -2743085293467550675}
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_Layer: 0
   m_Name: P_Showcase_AR
   m_TagString: Untagged
@@ -511,6 +514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectedAR: 0
   ARExplosionEffect: {fileID: 171756528292319034, guid: 3e666692cf5f7834f8e38fd8b13d2cd2, type: 3}
+<<<<<<< HEAD
   AR: {fileID: 0}
   Handgun: {fileID: 0}
   ARFXHolder: {fileID: -2743085293467550675}
@@ -610,6 +614,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!1 &8268567337692823238
 GameObject:
   m_ObjectHideFlags: 0
