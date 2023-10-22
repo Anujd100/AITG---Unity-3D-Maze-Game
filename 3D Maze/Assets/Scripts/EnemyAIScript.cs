@@ -38,9 +38,6 @@ public class EnemyAIScript : MonoBehaviour
     public Transform spawnPoint;
     public float enemyProjectileSpeed;
 
-    //Audio
-    public AudioSource shootingFX;
-
     private void OnEnable()
     {
         PlayerHealth.OnPlayerDeath += DisableEnemyMovement;
@@ -140,10 +137,6 @@ public class EnemyAIScript : MonoBehaviour
         GameObject bulletObj = Instantiate(enemyBullet, spawnPoint.transform.position, spawnPoint.transform.rotation) as GameObject;
         bulletObj.SetActive(true);
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
-
-        //Play SFX
-        shootingFX.enabled = true;
-
         bulletRig.AddForce(bulletRig.transform.forward * enemyProjectileSpeed);
         Destroy(bulletObj, 1f);
     }
@@ -166,9 +159,6 @@ public class EnemyAIScript : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
-
-        //Reset SFX
-        shootingFX.enabled = false;
     }
 
     private void OnDrawGizmosSelected()

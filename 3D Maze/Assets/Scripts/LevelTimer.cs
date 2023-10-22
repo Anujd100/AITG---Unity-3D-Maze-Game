@@ -51,7 +51,7 @@ public class LevelTimer : MonoBehaviour
            t /= 60; // divide by 60 to get hours
            int hours = (int)(t % 24); // return the remainder of the hours divided by 60 as an int
 
-           timerText.text = "TIME: " + string.Format("{0}:{1}:{2}", minutes.ToString("00"), seconds.ToString("00"), milliseconds.ToString("00"));
+           timerText.text = "Time: " + string.Format("{0}:{1}:{2}", minutes.ToString("00"), seconds.ToString("00"), milliseconds.ToString("00"));
        }
     }
 

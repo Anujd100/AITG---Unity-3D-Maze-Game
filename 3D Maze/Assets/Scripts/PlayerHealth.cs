@@ -28,6 +28,8 @@ public class PlayerHealth : MonoBehaviour {
 
             OnPlayerDeath?.Invoke();
 
+            Debug.Log(PlayerHUD.totalDeaths);
+
             alreadyDead = true;
         }
     }

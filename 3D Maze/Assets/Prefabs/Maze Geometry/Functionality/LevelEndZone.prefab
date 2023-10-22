@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 2841648578690598054}
   - component: {fileID: 2841648578690598055}
   - component: {fileID: 2841648578690598053}
+<<<<<<< HEAD
   - component: {fileID: 3037616993852841140}
   - component: {fileID: 4455686736458515187}
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_Layer: 0
   m_Name: LevelEndZone
   m_TagString: Untagged
@@ -28,8 +31,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841648578690598048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_LocalPosition: {x: 11.2, y: 1.4139223, z: 6.79}
+  m_LocalScale: {x: 2, y: 2, z: 2.6}
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,8 +54,13 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 3.2856095, y: 8.213596, z: 8.500657}
   m_Center: {x: 0.18700421, y: 0.2558527, z: -0.1351695}
+=======
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!114 &2841648578690598053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,6 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094b1959770115c4180c418ec3a5351a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!198 &3037616993852841140
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4839,3 +4853,5 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+=======
+>>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
