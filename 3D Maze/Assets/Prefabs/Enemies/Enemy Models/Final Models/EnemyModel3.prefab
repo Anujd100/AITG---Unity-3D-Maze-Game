@@ -15,10 +15,7 @@ GameObject:
   - component: {fileID: 7613105819026646000}
   - component: {fileID: 7613105819026646001}
   - component: {fileID: -1059202023661577596}
-<<<<<<< HEAD
   - component: {fileID: -5043174082531190427}
-=======
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_Layer: 8
   m_Name: EnemyModel3
   m_TagString: Enemy
@@ -33,29 +30,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7613105819026646006}
-<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 5.1775, y: 1.13, z: -17.1}
   m_LocalScale: {x: 0.3, y: 1, z: 0.25500003}
-=======
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.2, y: 1.13, z: -17.1}
-  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 55774893092374626}
   - {fileID: 7613105820819777506}
-<<<<<<< HEAD
   - {fileID: 2355238952146798602}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
-=======
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!33 &7613105819026646013
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -71,11 +56,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7613105819026646006}
-<<<<<<< HEAD
   m_Enabled: 0
-=======
-  m_Enabled: 1
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -156,16 +137,10 @@ MonoBehaviour:
   attackRange: 20
   playerInSightRange: 0
   playerInAttackRange: 0
-<<<<<<< HEAD
   enemyBullet: {fileID: 7593360961533982423, guid: 886fa022c6f84ab46b2d9731c01ee47d, type: 3}
   spawnPoint: {fileID: 7613105820819777506}
   enemyProjectileSpeed: 999
   shootingFX: {fileID: -5043174082531190427}
-=======
-  enemyBullet: {fileID: 7593360961533982423, guid: 0544e2baae08ae5469bae64b5cb27e23, type: 3}
-  spawnPoint: {fileID: 7613105820819777506}
-  enemyProjectileSpeed: 2000
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!195 &7613105819026646001
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -204,7 +179,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
-<<<<<<< HEAD
 --- !u!82 &-5043174082531190427
 AudioSource:
   m_ObjectHideFlags: 0
@@ -301,8 +275,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-=======
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!1 &7613105820819777507
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +306,6 @@ Transform:
   m_Father: {fileID: 7613105819026646012}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1001 &2820876401880788961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -409,8 +380,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e2d522082ce62fa4cae64724d336c24c, type: 3}
   m_PrefabInstance: {fileID: 2820876401880788961}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!1001 &7613105820588654258
 PrefabInstance:
   m_ObjectHideFlags: 0

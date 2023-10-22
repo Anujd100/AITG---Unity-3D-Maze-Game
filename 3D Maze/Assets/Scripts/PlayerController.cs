@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    //Variables
     public float moveSpeed = 1.0f;
     public float walkSpeed = 0.1f;
     public float runSpeed = 0.2f;
@@ -9,7 +11,9 @@ public class PlayerController : MonoBehaviour
     public float gravity = -20f;
     public float jumpSpeed = 2;
 
-    public static float mouseSensitivity = 2.0f;
+    //Guns
+    public GameObject AR;
+    public GameObject Handgun;
 
     private bool playerMovementEnabled = true;
     public static bool isWalking;
@@ -29,8 +33,18 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        //Make sure AR is not locked and disabled at the start of the first level
+        if(SceneManager.GetActiveScene().name == "3D Maze Level 1")
+        {
+            ARCollectionDetector.ARUnlocked = false;
+            AR.SetActive(false);
+            Handgun.SetActive(true);
+        }
+        
+
         Time.timeScale = 1;
         PlayerHUD.levelScore = 0;
+        ProjectileGun.shootingEnabled = true;
 
         mainCamera = GetComponentInChildren<Camera>();
         cc = GetComponent<CharacterController>();
@@ -56,9 +70,16 @@ public class PlayerController : MonoBehaviour
     {
         if (playerMovementEnabled != true) return;
 
+        //Disable AR if it is not unlocked
+        if(ARCollectionDetector.ARUnlocked == false) 
+        {
+            AR.SetActive(false);
+            Handgun.SetActive(true);
+        }
+
         // Camera rotation
-        float horizontalRotation = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float verticalRotationInput = Input.GetAxis("Mouse Y") * mouseSensitivity;
+        float horizontalRotation = Input.GetAxis("Mouse X") * SettingsMenuScript.mouseSensitivity;
+        float verticalRotationInput = Input.GetAxis("Mouse Y") * SettingsMenuScript.mouseSensitivity;
         
         verticalRotation -= verticalRotationInput;
         verticalRotation = Mathf.Clamp(verticalRotation, -80, 80);

@@ -7,7 +7,6 @@ using TMPro;
 
 public class MainMenuScript : MonoBehaviour
 {
-    public Slider MouseSensitivitySlider;
 
     public void PlayGame()
     {
@@ -19,6 +18,11 @@ public class MainMenuScript : MonoBehaviour
         SceneManager.LoadScene("Settings Screen");
     }
 
+    public void TutorialLoader()
+    {
+        SceneManager.LoadScene("Tutorial Screen");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
@@ -27,11 +31,6 @@ public class MainMenuScript : MonoBehaviour
     public void BackButton()
     {
         SceneManager.LoadScene("Start Screen");
-    }
-
-    public void MouseSensitivity()
-    {
-        PlayerController.mouseSensitivity = MouseSensitivitySlider.value;
     }
 
     public void MainMenuLoader()

@@ -80,7 +80,7 @@ public class CustomBullet : MonoBehaviour
             }
         }
 
-        //Destroy bullet and explosion effect after 0.05 seconds
+        //Destroy bullet after 0.05 seconds
         Invoke("Delay", 0.05f);
     }
 
@@ -108,6 +108,23 @@ public class CustomBullet : MonoBehaviour
             directHit = true;
 
             other.GetComponent<EnemyAIScript>().TakeDamage(bulletDamage);
+
+            //Explode if explodeOnTouch is activated
+            if (explodeOnTouch) Explode();
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            //Set directHit to true when directly hitting enemy
+            directHit = true;
+
+            other.GetComponent<EnemyAIScript>().TakeDamage(bulletDamage);
+
+            //Explode if explodeOnTouch is activated
+            if (explodeOnTouch) Explode();
         }
     }
 

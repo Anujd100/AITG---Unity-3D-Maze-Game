@@ -8,6 +8,11 @@ public class ARCollectionDetector : MonoBehaviour
     public bool collectedAR = false;
 
     public GameObject ARExplosionEffect;
+    public GameObject AR;
+    public GameObject Handgun;
+
+    //Audio
+    public AudioSource ARFXHolder;
 
     void OnTriggerEnter(Collider other)
     {
@@ -16,8 +21,15 @@ public class ARCollectionDetector : MonoBehaviour
             if (collectedAR == false)
             {
                 WeaponSwitching.selectedWeapon = 1;
-                DestroyItem();
+                AR.SetActive(true);
+                Handgun.SetActive(false);
+
+                //Play SFX
+                ARFXHolder.enabled = true;
+
+                Invoke("DestroyItem", 0.2f);
             }
+
             collectedAR = true;
             ARUnlocked = true;
         }
@@ -25,8 +37,13 @@ public class ARCollectionDetector : MonoBehaviour
 
     void DestroyItem()
     {
+        //Destroy AR Holder
         Destroy(gameObject);
+
+        //Instantiate Explosion
         GameObject explosion = Instantiate(ARExplosionEffect, transform.position, transform.rotation);
+
+        //Destroy Explosion
         Destroy(explosion, 1f);
     }
 }

@@ -375,10 +375,7 @@ GameObject:
   - component: {fileID: 4911434808211269023}
   - component: {fileID: 2068671132366998318}
   - component: {fileID: 2068671132366998355}
-<<<<<<< HEAD
   - component: {fileID: 3966018478043904115}
-=======
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -513,19 +510,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
   walkSpeed: 1.5
-<<<<<<< HEAD
   runSpeed: 2.15
   rotationSpeed: 90
   gravity: -20
   jumpSpeed: 7
   AR: {fileID: 4128167333639713837}
   Handgun: {fileID: 3156215728354293594}
-=======
-  runSpeed: 2
-  rotationSpeed: 90
-  gravity: -20
-  jumpSpeed: 7
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!195 &3633999482123218041
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1045,10 +1035,7 @@ MonoBehaviour:
   HandgunSFX: {fileID: -8355716323370730734}
   ARSFX: {fileID: 9172655702431127703}
   bulletExplosionSFX: {fileID: 4911434808211269023}
-<<<<<<< HEAD
   itemExplosionSFX: {fileID: 3966018478043904115}
-=======
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!54 &2068671132366998355
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1065,7 +1052,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
-<<<<<<< HEAD
 --- !u!82 &3966018478043904115
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1162,8 +1148,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-=======
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
 --- !u!1 &4128167333639713837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,13 +1264,8 @@ MonoBehaviour:
   shootForce: 30
   upwardForce: 0
   timeBetweenShooting: 0.2
-<<<<<<< HEAD
   spread: 0.4
   reloadTime: 3
-=======
-  spread: 0.3
-  reloadTime: 2
->>>>>>> edd733a844eb3b812fb28fb68e588d95e61a3c2e
   timeBetweenShots: 0.1
   magazineSize: 50
   bulletsPerTap: 1

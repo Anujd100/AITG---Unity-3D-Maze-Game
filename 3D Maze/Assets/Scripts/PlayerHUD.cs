@@ -22,7 +22,7 @@ public class PlayerHUD : MonoBehaviour
     void Update()
     {
         // Update health and score values
-        healthText.text = "Health: " + health.ToString();
-        scoreText.text = "Score: " + levelScore.ToString();
+        healthText.text = "HEALTH: " + health.ToString();
+        scoreText.text = "SCORE: " + levelScore.ToString();
     }
 }
