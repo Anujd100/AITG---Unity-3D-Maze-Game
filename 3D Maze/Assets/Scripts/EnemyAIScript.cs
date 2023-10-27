@@ -13,6 +13,7 @@ public class EnemyAIScript : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public float enemyHealth;
+    public float maxHealth;
 
     public float patrolSpeed = 5.0f;
     public float pursuitSpeed = 10.0f;
@@ -39,7 +40,12 @@ public class EnemyAIScript : MonoBehaviour
     public float enemyProjectileSpeed;
 
     //Audio
+    public AudioSource patrolFX;
+    public AudioSource chaseFX;
     public AudioSource shootingFX;
+    public AudioSource damageFX;
+
+    [SerializeField] private HealthbarScript _healthbar;
 
     private void OnEnable()
     {
@@ -63,7 +69,11 @@ public class EnemyAIScript : MonoBehaviour
     {
         enemyMovementEnabled = true;
         enemyKills = 0;
-}
+
+        enemyHealth = maxHealth;
+
+        _healthbar.UpdateHealthBar(maxHealth, enemyHealth);
+    }
 
     private void Update()
     {
@@ -92,6 +102,12 @@ public class EnemyAIScript : MonoBehaviour
 
         if (walkPointSet)
         {
+            //Play SFX
+            patrolFX.enabled = true;
+            shootingFX.enabled = false;  
+            damageFX.enabled = false;
+            chaseFX.enabled = false;
+
             agent.speed = pursuitSpeed;
             agent.SetDestination(walkPoint);
         }
@@ -115,6 +131,12 @@ public class EnemyAIScript : MonoBehaviour
 
     private void ChasePlayer()
     {
+        //Play SFX
+        chaseFX.enabled = true;
+        patrolFX.enabled = false;
+        shootingFX.enabled = false;
+        damageFX.enabled = false;
+
         agent.speed = pursuitSpeed;
         agent.SetDestination(player.position);
     }
@@ -143,6 +165,9 @@ public class EnemyAIScript : MonoBehaviour
 
         //Play SFX
         shootingFX.enabled = true;
+        damageFX.enabled = false;
+        chaseFX.enabled = false;
+        patrolFX.enabled = false;
 
         bulletRig.AddForce(bulletRig.transform.forward * enemyProjectileSpeed);
         Destroy(bulletObj, 1f);
@@ -150,7 +175,14 @@ public class EnemyAIScript : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        //Play SFX
+        damageFX.enabled = true;
+        shootingFX.enabled = false;
+        chaseFX.enabled = false;
+        patrolFX.enabled = false;
+
         enemyHealth -= damage;
+        _healthbar.UpdateHealthBar(maxHealth, enemyHealth);
 
         if (enemyHealth <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
     }
@@ -169,6 +201,7 @@ public class EnemyAIScript : MonoBehaviour
 
         //Reset SFX
         shootingFX.enabled = false;
+        damageFX.enabled = false;
     }
 
     private void OnDrawGizmosSelected()

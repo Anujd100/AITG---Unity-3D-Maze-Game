@@ -23,6 +23,12 @@ public class BackgroundMusic : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void Start()
+    {
+        AudioListener.volume = 1.0f;
+    }
+
     void Update()
     {
         if (SceneManager.GetActiveScene().name == "Start Screen" || SceneManager.GetActiveScene().name == "Tutorial Screen" || SceneManager.GetActiveScene().name == "Settings Screen")

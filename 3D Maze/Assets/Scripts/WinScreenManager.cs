@@ -17,6 +17,7 @@ public class WinScreenManager : MonoBehaviour
 
     void Start()
     {
+        AudioListener.volume = 1.0f;
         winScreenFX.enabled = true;
     }
 
