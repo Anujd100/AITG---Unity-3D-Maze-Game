@@ -28,7 +28,6 @@ public class EndGameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(AudioListener.volume);
         AudioFader();
     }
 
